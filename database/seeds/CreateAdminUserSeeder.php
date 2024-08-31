@@ -34,9 +34,9 @@ class CreateAdminUserSeeder extends Seeder
         ## create user superadmin
         $user = User::create([
             'user_type_id' => UserType::STAFF,
-            'name' => 'ENCIK HAEZAL BIN MUSA',
-            'email' => 'haezal@um.edu.my',
-            'password' => bcrypt('akudahkawin'),
+            'name' => 'MOHAMAD AZDI BIN MOHD MUSTAFA',
+            'email' => 'azdi.uum@gmail.com',
+            'password' => bcrypt('123456789'),
         ]);    
         $user->profile()->updateOrCreate(['user_id' => $user->id], [
             'salary_no' => '00010996',

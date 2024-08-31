@@ -25,9 +25,6 @@ Create your database
 ## Refresh Database
  - php artisan migrate:refresh --seed
 
-## Fetch Organzation data | ptj->department
- - php artisan sync:organization
-
 ## Dump autoload
 Untuk load helper customization
  - composer dump-autoload

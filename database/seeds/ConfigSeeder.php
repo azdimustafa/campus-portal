@@ -17,7 +17,7 @@ class ConfigSeeder extends Seeder
         $items = [
             [
                 'key' => 'site_name', 
-                'value' => 'Laravel9999', 
+                'value' => 'Campus Portal', 
             ],
             [
                 'key' => 'google_enable', 
