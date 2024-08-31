@@ -1,0 +1,328 @@
+.tree {
+    padding: 20px;
+    min-height: 20px;
+    margin-bottom: 20px;
+    background-color: #fff;
+}
+
+.tree li {
+    list-style-type: none;
+    margin: 0;
+    padding: 10px 5px 0;
+    position: relative
+}
+
+.tree li::after,
+.tree li::before {
+    content: '';
+    left: -20px;
+    position: absolute;
+    right: auto
+}
+
+.tree li::before {
+    border-left: 1px dashed #999;
+    bottom: 50px;
+    height: 100%;
+    top: 0;
+    width: 1px
+}
+
+.tree li::after {
+    border-top: 1px dashed #999;
+    height: 20px;
+    top: 25px;
+    width: 25px
+}
+
+.tree li span {
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    display: inline-block;
+    padding: 3px 8px;
+    text-decoration: none
+}
+
+.tree li.parent_li>span {
+    cursor: pointer
+}
+
+.tree>ul>li::after,
+.tree>ul>li::before {
+    border: 0
+}
+
+.tree li:last-child::before {
+    height: 26px
+}
+
+.treesub {
+    display: inline-block;
+    min-width: 10px;
+    padding: 3px 7px;
+    font-size: 12px;
+    font-weight: 700;
+    color: #fff;
+    line-height: 1;
+    vertical-align: baseline;
+    white-space: nowrap;
+    text-align: center;
+    background-color: #999;
+    border-radius: 10px
+}
+
+.badge-level1 {
+    background-color: #9e0202;
+    color: #FFF;
+    font-size: 15.5px;
+    font-weight: 700
+}
+
+.badge-meeting {
+    background-color: #b7befa;
+    color: #FFF;
+    font-size: 15.5px;
+    font-weight: 700
+}
+
+.badge-level2,
+.badge-level3,
+.badge-level4 {
+    /* font-size: 13px; */
+    font-weight: 700
+}
+
+.badge-level2 {
+    background-color: #f0f0f0;
+    /* color: #FFF */
+}
+
+.badge-level3 {
+    background-color: #FFF;
+    color: #000;
+    border: 1px solid #999
+}
+
+.badge-level4 {
+    background-color: #4183D7;
+    color: #FFF
+}
+
+.badge-level5 {
+    background-color: #1CA959;
+    color: #FFF;
+    font-size: 13.5px;
+    font-weight: 700
+}
+
+.badge-level6,
+.badge-level7 {
+    background-color: #F1F2F7;
+    color: #000;
+    font-size: 12.5px;
+    font-weight: 700
+}
+
+.tree-solid-line {
+    padding-left: 12px
+}
+
+.tree.tree-no-line {
+    padding-left: 0
+}
+
+.tree:before {
+    width: 1px;
+    z-index: 1;
+    display: block;
+    content: "";
+    position: absolute;
+    top: -21px;
+    bottom: 16px;
+    left: 0;
+    border-left: 1px dotted #666
+}
+
+.tree.tree-solid-line:before {
+    border-left: 1px solid #999
+}
+
+.tree.tree-no-line:before {
+    display: none
+}
+
+.tree .tree-folder {
+    width: auto;
+    min-height: 20px;
+    cursor: pointer
+}
+
+.tree .tree-folder .tree-folder-header {
+    position: relative;
+    min-height: 20px;
+    line-height: 20px;
+    min-width: 100px
+}
+
+.tree .tree-folder .tree-folder-header .tree-folder-name,
+.tree .tree-item .tree-item-name {
+    display: inline;
+    z-index: 2
+}
+
+.tree .tree-folder img {
+    margin-left: 4px
+}
+
+.tree .tree-folder .tree-folder-header .tree-folder-name {
+    margin-left: 2px
+}
+
+.tree .tree-folder .tree-folder-content {
+    margin-left: 23px;
+    position: relative
+}
+
+.tree .tree-folder .tree-folder-content:before {
+    display: inline-block;
+    content: "";
+    position: absolute;
+    width: 1px;
+    z-index: 1;
+    top: -9px;
+    bottom: 16px;
+    left: -12px;
+    border-left: 1px dotted #666
+}
+
+.tree.tree-solid-line .tree-folder .tree-folder-content:before {
+    border-left: 1px solid #999
+}
+
+.tree.tree-no-line .tree-folder .tree-folder-content:before {
+    display: none
+}
+
+.tree .tree-item {
+    min-height: 20px;
+    line-height: 20px;
+    min-width: 100px;
+    cursor: pointer
+}
+
+.tree .tree-item .tree-item-name {
+    margin-left: 2px
+}
+
+.tree .tree-folder,
+.tree .tree-item {
+    position: relative
+}
+
+.tree .tree-folder:before,
+.tree .tree-item:before {
+    display: inline-block;
+    content: "";
+    position: absolute;
+    top: 14px;
+    left: -13px;
+    width: 18px;
+    height: 0;
+    border-top: 1px dotted #666;
+    z-index: 1
+}
+
+.tree.tree-solid-line .tree-folder:before,
+.tree.tree-solid-line .tree-item:before {
+    border-top: 1px solid #999
+}
+
+.tree.tree-no-line .tree-folder:before,
+.tree.tree-no-line .tree-item:before {
+    display: none
+}
+
+.tree .tree-selected {
+    background-color: #F1F2F7;
+    color: #6398b0;
+    border-radius: 4px;
+    -webkit-border-radius: 4px
+}
+
+.tree .tree-folder,
+.tree .tree-item {
+    border: 1px solid #FFF
+}
+
+.tree .tree-folder .tree-folder-header,
+.tree .tree-item {
+    margin: 0;
+    padding: 4px 5px 6px;
+    color: #333;
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box
+}
+
+.tree .tree-folder .tree-folder-header>i,
+.tree .tree-item .tree-item-name>i {
+    color: #666
+}
+
+.tree .tree-item .tree-item-name>i,
+.tree .tree-item.tree-selected>i {
+    margin-left: -2px;
+    width: 14px;
+    display: inline-block;
+    text-align: center;
+    margin-right: 1px;
+    color: #666
+}
+
+.tree.tree-plus-minus .tree-folder-header .fa-folder-open:before {
+    height: 16px;
+    width: 16px;
+    line-height: 16px;
+    vertical-align: middle;
+    display: inline-block;
+    background: url(../img/tree-icons.png) 0 -23px no-repeat;
+    content: ""
+}
+
+.tree.tree-plus-minus .tree-folder-header .fa-folder:before {
+    height: 16px;
+    width: 16px;
+    line-height: 16px;
+    vertical-align: middle;
+    display: inline-block;
+    background: url(../img/tree-icons.png) no-repeat;
+    content: ""
+}
+
+.ie .tree.tree-plus-minus .tree-folder-header .fa-folder-open:before,
+.ie .tree.tree-plus-minus .tree-folder-header .fa-folder:before {
+    margin-top: -5px
+}
+
+.tree.tree-plus-minus .tree-folder-name {
+    margin-left: 0!important
+}
+
+.tree .tree-actions {
+    display: none;
+    position: absolute;
+    margin-top: 1px;
+    right: 4px
+}
+
+.tree .tree-actions>i {
+    font-weight: 300;
+    padding: 1px 3px;
+    text-align: center;
+    font-size: 14px;
+    color: #999;
+    margin-right: 6px;
+    margin-top: 0;
+    display: inline-block
+}

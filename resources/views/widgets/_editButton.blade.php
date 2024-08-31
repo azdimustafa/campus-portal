@@ -1,0 +1,1 @@
+<a href="{{ $route ?? '#' }}" class="{{ config("adminlte.btn_edit") }}" data-toggle="tooltip" data-placement="top" title="{{ __('Edit') }}"><i class="fa fa-edit"></i></a>

@@ -1,0 +1,101 @@
+/* enable absolute positioning */
+
+.inner-addon {
+    position: relative;
+}
+
+
+/* style glyph */
+
+.inner-addon .fa {
+    position: absolute;
+    padding: 10px;
+    pointer-events: none;
+}
+
+
+/* align glyph */
+
+.left-addon .fa {
+    left: 0px;
+}
+
+.right-addon .fa {
+    right: 10px;
+}
+
+
+/* add padding  */
+
+.left-addon input {
+    padding-left: 30px;
+}
+
+.right-addon input {
+    padding-right: 30px;
+}
+
+.custom-nav .active {
+    background: transparent !important;
+    border-bottom: 4px solid #007bff !important;
+    border-radius: 0px !important;
+    color: black;
+    font-weight: 900;
+}
+
+.nav a {
+    color: grey;
+}
+
+@media screen and (max-width: 640px) {
+    table#availableMobileView caption {
+        background-image: none;
+    }
+    table#availableMobileView thead {
+        display: none;
+    }
+    table#availableMobileView tbody td {
+        display: block;
+        padding: .6rem;
+    }
+    table#availableMobileView tbody tr td:first-child {
+        background: #666;
+        color: #fff;
+    }
+    table#availableMobileView tbody tr td:first-child a {
+        color: #fff;
+    }
+    table#availableMobileView tbody tr td:first-child:before {
+        color: rgb(225, 181, 71);
+    }
+    table#availableMobileView tbody td:before {
+        content: attr(data-th);
+        font-weight: bold;
+        display: inline-block;
+        width: 10rem;
+    }
+    table#availableMobileView tr th:last-child,
+    table#availableMobileView tr td:last-child {
+        max-width: 100% !important;
+        min-width: 100px !important;
+        width: 100% !important;
+    }
+}
+
+.image-pic {
+    max-width: 150px;
+    max-height: 150px;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.file-upload {
+    display: none;
+}
+
+
+/* .nav-treeview {
+    font-size: 14px;
+    margin-left: 15px;
+    padding-right: 15px;
+} */
